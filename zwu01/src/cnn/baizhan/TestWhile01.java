@@ -1,7 +1,5 @@
 package cnn.baizhan;
 
-import java.sql.SQLOutput;
-
 public class TestWhile01 {
     public static void main(String[] args) {
         int i = 0;
