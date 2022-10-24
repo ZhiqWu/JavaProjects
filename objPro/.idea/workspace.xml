@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec479ba-8129-4861-ad93-735343b83dac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/objPro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SxtStu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zwu01/src/cnn/baizhan/TestOverload01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../zwu01/src/cnn/baizhan/TestRecursion01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zwu01/out/production/zwu01/cnn/baizhan/TestMethods01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zwu01/out/production/zwu01/cnn/baizhan/TestMethods01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zwu01/out/production/zwu01/cnn/baizhan/TestWhile01.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zwu01/out/production/zwu01/cnn/baizhan/TestWhile01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zwu01/out/production/zwu01/zwu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../zwu01/out/production/zwu01/zwu/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sxtstu2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SxtStu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SxtStu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666613864925</updated>
-      <workItem from="1666613866117" duration="548000" />
+      <workItem from="1666613866117" duration="3120000" />
     </task>
     <servers />
   </component>
