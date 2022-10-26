@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec479ba-8129-4861-ad93-735343b83dac" name="Changes" comment="">
+    <list default="true" id="6ec479ba-8129-4861-ad93-735343b83dac" name="Changes" comment="20221025">
+      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sxtstu2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sxtstu2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +49,17 @@
       <option name="presentableId" value="Default" />
       <updated>1666613864925</updated>
       <workItem from="1666613866117" duration="3721000" />
-      <workItem from="1666699021585" duration="829000" />
+      <workItem from="1666699021585" duration="1703000" />
+      <workItem from="1666771465796" duration="5816000" />
     </task>
+    <task id="LOCAL-00001" summary="20221025">
+      <created>1666701076823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666701076823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +78,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="20221025" />
+    <option name="LAST_COMMIT_MESSAGE" value="20221025" />
   </component>
 </project>
