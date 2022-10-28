@@ -1,2 +1,5 @@
-package com.zwu.success;public class Test {
+package com.zwu.success;
+
+public class Test {
+
 }

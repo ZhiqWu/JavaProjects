@@ -1,2 +1,4 @@
-package com.zwu.success;public class TestOverride {
+package com.zwu.success;
+
+public class TestOverride {
 }
