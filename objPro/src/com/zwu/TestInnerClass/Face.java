@@ -3,7 +3,7 @@ package com.zwu.TestInnerClass;
 public class Face {
     private String shape = "国字脸";
 
-    //内部类
+    //非静态内部类
     class Nose {
         private String shape = "高鼻梁";
 
