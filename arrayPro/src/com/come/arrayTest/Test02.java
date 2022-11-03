@@ -2,14 +2,14 @@ package com.come.arrayTest;
 
 public class Test02 {
     public static void main(String[] args) {
-        Man[] mans=new Man[5];
-        mans={};
+        Man[] mans = {new Man(1, "1111")};
+        System.out.println(mans.toString());
     }
 }
 
-class Man{
+class Man {
     private int id;
-    private int name;
+    private String name;
 
     public int getId() {
         return id;
@@ -19,16 +19,18 @@ class Man{
         this.id = id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
-    public Man(){}
 
-    public Man(int id, int name) {
+    public Man() {
+    }
+
+    public Man(int id, String name) {
         this.id = id;
         this.name = name;
     }
