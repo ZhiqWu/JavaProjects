@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec479ba-8129-4861-ad93-735343b83dac" name="Changes" comment="20221025">
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/TestInnerClass/Outer02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/TestInnerClass/TestAnonymousInnerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/TestInnerClass/TestLocalInnerClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zwu/TestInnerClass/Face.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zwu/TestInnerClass/Face.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,8 @@
       <workItem from="1667203414275" duration="4437000" />
       <workItem from="1667286073761" duration="4445000" />
       <workItem from="1667387200104" duration="4338000" />
-      <workItem from="1667397160445" duration="1031000" />
+      <workItem from="1667397160445" duration="1628000" />
+      <workItem from="1667471312361" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="20221025">
       <created>1666701076823</created>
