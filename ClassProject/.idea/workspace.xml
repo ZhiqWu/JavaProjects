@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b8174d0-0ca3-4fa9-a7d9-450d0944408f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestDate01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestDate02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestString01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestString02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestCalendar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestFile01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Someclass/TestRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Someclass/TestDate02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Someclass/TestDateFormat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,8 @@
       <option name="presentableId" value="Default" />
       <updated>1667821572214</updated>
       <workItem from="1667821573405" duration="4033000" />
-      <workItem from="1667887756627" duration="5490000" />
+      <workItem from="1667887756627" duration="5716000" />
+      <workItem from="1667975475752" duration="5420000" />
     </task>
     <servers />
   </component>

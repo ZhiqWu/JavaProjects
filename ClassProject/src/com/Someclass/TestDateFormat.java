@@ -9,7 +9,7 @@ import java.util.Date;
  * 测试时间对象和字符串的互相转化
  * 使用：DateFormat、SimpleDateFormat
  * */
-public class TestDate02 {
+public class TestDateFormat {
     public static void main(String[] args) throws ParseException {
         //new出SimpleDateFormat对象
         SimpleDateFormat s1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
