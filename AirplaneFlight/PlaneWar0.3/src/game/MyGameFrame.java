@@ -8,23 +8,17 @@ import java.awt.event.WindowEvent;
  * */
 
 public class MyGameFrame extends Frame {
+
+    Image plane = GameUtils.getImage("images/plane.png");
+    Image bg = GameUtils.getImage("images/bg.jpg");
+
+
     //初始化窗口
     @Override
     public void paint(Graphics g) {  //g当作是一支画笔
 
-        Color c = g.getColor();
-
-        g.setColor(Color.red);
-        g.setColor(new Color(255, 0, 100));
-        //画直线
-        g.drawLine(100, 100, 400, 400);
-        //画矩形
-        g.drawRect(100, 100, 300, 200);
-        //画椭圆
-        g.drawOval(100, 100, 300, 200);
-        //画字符串
-        g.drawString("你好咯", 300, 300);
-        g.setColor(c);
+        g.drawImage(bg, 0, 0, 500, 500, null);
+        g.drawImage(plane, 100, 100, 22, 33, null);
 
     }
 

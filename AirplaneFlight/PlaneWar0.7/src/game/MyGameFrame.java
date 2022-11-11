@@ -18,6 +18,9 @@ public class MyGameFrame extends Frame {
     Image bg = GameUtils.getImage("images/bg.jpg");
     Plane p1 = new Plane(planeImage, 100, 100, 7);
 
+    Shell s1 = new Shell();
+    Shell[] shells = new Shell[50];
+
 
     //初始化窗口
     @Override
@@ -25,6 +28,11 @@ public class MyGameFrame extends Frame {
 
         g.drawImage(bg, 0, 0, Game_Width, Game_Height, null);
         p1.drawMyself(g);
+
+        //画炮弹
+        for (int i = 0; i < shells.length; ++i) {
+            shells[i].drawMyself(g);
+        }
 
 
     }
@@ -45,6 +53,12 @@ public class MyGameFrame extends Frame {
 
         new PaintThread().start(); //启动重画窗口的线程
         this.addKeyListener(new KeyMonitor()); //启动键盘监听
+
+        //初始化创建50个炮弹对象
+        for (int i = 0; i < 50; ++i) {
+            shells[i] = new Shell();
+        }
+
 
     }
 

@@ -12,12 +12,13 @@ import static game.Constant.Game_Width;
 
 public class MyGameFrame extends Frame {
 
-    Image plane = GameUtils.getImage("images/plane.png");
+    Image planeImage = GameUtils.getImage("images/plane.png");
     Image bg = GameUtils.getImage("images/bg.jpg");
-
+    GameObject plane = new GameObject(planeImage, 100, 100, 3, 22, 33);
+    Plane p1=new Plane(planeImage,100,100,3);
 
     static int count = 0;
-    int planeX = 100;
+
 
     //初始化窗口
     @Override
@@ -25,8 +26,9 @@ public class MyGameFrame extends Frame {
         System.out.println("绘制窗口的次数：" + count);
         count++;
         g.drawImage(bg, 0, 0, Game_Width, Game_Height, null);
-        g.drawImage(plane, planeX, 100, 22, 33, null);
-        planeX += 1;
+        plane.drawMyself(g);
+        p1.drawMyself(g);
+
 
     }
 

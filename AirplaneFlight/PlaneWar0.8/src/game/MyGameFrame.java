@@ -19,7 +19,7 @@ public class MyGameFrame extends Frame {
     Plane p1 = new Plane(planeImage, 100, 100, 7);
 
     Shell s1 = new Shell();
-    Shell[] shells = new Shell[50];
+    Shell[] shells = new Shell[3];
 
 
     //初始化窗口
@@ -32,9 +32,14 @@ public class MyGameFrame extends Frame {
         //画炮弹
         for (int i = 0; i < shells.length; ++i) {
             shells[i].drawMyself(g);
+
+            //碰撞检测，将所有的炮弹和飞机进行矩形检测，检测是否碰撞
+            boolean flag = shells[i].getRec().intersects(p1.getRec());
+            if (flag) {
+                System.out.println("飞机被击中了！");
+                p1.live = false;
+            }
         }
-
-
     }
 
     public void launchFrame() {
@@ -55,7 +60,7 @@ public class MyGameFrame extends Frame {
         this.addKeyListener(new KeyMonitor()); //启动键盘监听
 
         //初始化创建50个炮弹对象
-        for (int i = 0; i < 50; ++i) {
+        for (int i = 0; i < shells.length; ++i) {
             shells[i] = new Shell();
         }
 

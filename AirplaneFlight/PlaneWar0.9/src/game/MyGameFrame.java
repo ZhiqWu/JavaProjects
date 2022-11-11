@@ -19,7 +19,9 @@ public class MyGameFrame extends Frame {
     Plane p1 = new Plane(planeImage, 100, 100, 7);
 
     Shell s1 = new Shell();
-    Shell[] shells = new Shell[3];
+    Shell[] shells = new Shell[50];
+
+    Explode explode;//爆炸
 
 
     //初始化窗口
@@ -36,8 +38,14 @@ public class MyGameFrame extends Frame {
             //碰撞检测，将所有的炮弹和飞机进行矩形检测，检测是否碰撞
             boolean flag = shells[i].getRec().intersects(p1.getRec());
             if (flag) {
-                System.out.println("飞机被击中了！");
+                //System.out.println("飞机被击中了！");
                 p1.live = false;
+
+                //处理爆炸效果
+                if (explode == null) {
+                    explode = new Explode(p1.x, p1.y);
+                }
+                explode.drawMyself(g);
             }
         }
     }

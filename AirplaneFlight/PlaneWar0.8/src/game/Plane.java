@@ -6,23 +6,26 @@ import java.awt.event.KeyEvent;
 public class Plane extends GameObject {
 
     boolean left, right, up, down; //飞机的方向控制
+    boolean live = true;             //飞机是否存活
 
     @Override
     public void drawMyself(Graphics g) {
-        super.drawMyself(g);
-        //飞机飞行的算法，可以自行设定
-        // x += speed;
-        if (left) {
-            x -= speed;
-        }
-        if (right) {
-            x += speed;
-        }
-        if (up) {
-            y -= speed;
-        }
-        if (down) {
-            y += speed;
+        if (live) {
+            super.drawMyself(g);
+            //飞机飞行的算法，可以自行设定
+            // x += speed;
+            if (left) {
+                x -= speed;
+            }
+            if (right) {
+                x += speed;
+            }
+            if (up) {
+                y -= speed;
+            }
+            if (down) {
+                y += speed;
+            }
         }
 
     }

@@ -1,6 +1,8 @@
 package game;
 
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -14,19 +16,14 @@ public class MyGameFrame extends Frame {
 
     Image planeImage = GameUtils.getImage("images/plane.png");
     Image bg = GameUtils.getImage("images/bg.jpg");
-    GameObject plane = new GameObject(planeImage, 100, 100, 3, 22, 33);
-    Plane p1=new Plane(planeImage,100,100,3);
-
-    static int count = 0;
+    Plane p1 = new Plane(planeImage, 100, 100, 7);
 
 
     //初始化窗口
     @Override
     public void paint(Graphics g) {  //g当作是一支画笔
-        System.out.println("绘制窗口的次数：" + count);
-        count++;
+
         g.drawImage(bg, 0, 0, Game_Width, Game_Height, null);
-        plane.drawMyself(g);
         p1.drawMyself(g);
 
 
@@ -47,6 +44,7 @@ public class MyGameFrame extends Frame {
         });
 
         new PaintThread().start(); //启动重画窗口的线程
+        this.addKeyListener(new KeyMonitor()); //启动键盘监听
 
     }
 
@@ -67,6 +65,23 @@ public class MyGameFrame extends Frame {
             }
         }
     }
+
+    //内部类：实现键盘的监听处理
+    class KeyMonitor extends KeyAdapter {
+        @Override
+        public void keyPressed(KeyEvent e) {
+            //System.out.println("按下：" + e.getKeyCode());
+            p1.moveDirection(e);
+
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            //System.out.println("抬起：" + e.getKeyCode());
+            p1.stopDirection(e);
+        }
+    }
+
 
     //添加双缓冲技术
     private Image offScreenImage = null;

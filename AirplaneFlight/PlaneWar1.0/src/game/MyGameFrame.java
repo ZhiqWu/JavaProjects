@@ -5,6 +5,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.Date;
 
 import static game.Constant.Game_Height;
 import static game.Constant.Game_Width;
@@ -23,13 +24,22 @@ public class MyGameFrame extends Frame {
 
     Explode explode;//爆炸
 
+    Date start = new Date(); //游戏开始的时间
+    Date end;   //游戏结束的时间（飞机被击中的那一刻）
+    long period = 0;//玩了多少秒
+
 
     //初始化窗口
     @Override
     public void paint(Graphics g) {  //g当作是一支画笔
 
+        //画背景
         g.drawImage(bg, 0, 0, Game_Width, Game_Height, null);
+
+        //花飞机
         p1.drawMyself(g);
+        //画时间
+        drawTime(g);
 
         //画炮弹
         for (int i = 0; i < shells.length; ++i) {
@@ -48,6 +58,27 @@ public class MyGameFrame extends Frame {
                 explode.drawMyself(g);
             }
         }
+    }
+
+    public void drawTime(Graphics g) {
+        Color c = g.getColor();
+        Font f = g.getFont();
+        g.setColor(Color.GREEN);
+        if (p1.live) {
+            period = (System.currentTimeMillis() - start.getTime()) / 1000;
+            g.drawString("坚持：" + period, 25, 42);
+        } else {
+            if (end == null) {
+                end = new Date();
+                period = (end.getTime() - start.getTime()) / 1000;
+            }
+            g.setColor(Color.red);
+            g.setFont(new Font("微软雅黑", Font.BOLD, 30));
+            g.drawString("最终时间：" + period + " !", 150, 250);
+
+        }
+        g.setColor(c);
+        g.setFont(f);
     }
 
     public void launchFrame() {
@@ -120,12 +151,9 @@ public class MyGameFrame extends Frame {
         paint(gOff);
         g.drawImage(offScreenImage, 0, 0, null);
     }
-
-
+    
     public static void main(String[] args) {
         MyGameFrame gameFrame = new MyGameFrame();
         gameFrame.launchFrame();
     }
-
-
 }
