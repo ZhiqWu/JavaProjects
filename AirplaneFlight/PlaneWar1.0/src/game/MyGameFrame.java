@@ -151,7 +151,7 @@ public class MyGameFrame extends Frame {
         paint(gOff);
         g.drawImage(offScreenImage, 0, 0, null);
     }
-    
+
     public static void main(String[] args) {
         MyGameFrame gameFrame = new MyGameFrame();
         gameFrame.launchFrame();
