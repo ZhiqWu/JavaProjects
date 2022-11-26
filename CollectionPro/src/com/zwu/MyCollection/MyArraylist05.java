@@ -7,23 +7,31 @@ package com.zwu.MyCollection;
  * 增加数组边界检查
  * */
 
-public class MyArraylist04<E> {
+public class MyArraylist05<E> {
     private Object[] elementData;
     private int size;
 
     private static int DEFAULT_CAPACITY = 10;
 
-    public MyArraylist04() {
+    public MyArraylist05() {
         elementData = new Object[DEFAULT_CAPACITY];
     }
 
-    public MyArraylist04(int capacity) {
+    public MyArraylist05(int capacity) {
         if (capacity < 0) {
             throw new RuntimeException("容器容量不能为负数");
         } else if (capacity == 0) {
             capacity = DEFAULT_CAPACITY;
         }
         elementData = new Object[capacity];
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0 ? true : false;
     }
 
     public void add(E element) {
@@ -54,6 +62,27 @@ public class MyArraylist04<E> {
         }
     }
 
+    public void remove(E element) {
+        //element，将它和所有元素挨个比较，获得第一个比较为true的，返回
+        for (int i = 0; i < size; ++i) {
+            if (element.equals(get(i))) {//容器中所有的比较操作都是用equals
+                //将该元素移除
+                remove(i);
+            }
+        }
+    }
+
+    public void remove(int index) {
+        //a,b,c ---> a,c
+        int numMoved = elementData.length - index - 1;
+        if (numMoved > 0) {
+            System.arraycopy(elementData, index + 1, elementData, index, numMoved);
+            elementData[size - 1] = null;
+        }
+        elementData[--size] = null;
+    }
+
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -66,7 +95,7 @@ public class MyArraylist04<E> {
     }
 
     public static void main(String[] args) {
-        MyArraylist04<String> s1 = new MyArraylist04<>();
+        MyArraylist05<String> s1 = new MyArraylist05<>();
         s1.add("aa");
         s1.add("bb");
         for (int i = 0; i < 10; ++i) {
@@ -75,6 +104,9 @@ public class MyArraylist04<E> {
         System.out.println(s1);
         s1.set("dddd", 10);
         System.out.println(s1.get(10));
+        s1.remove(3);
+        System.out.println(s1);
+        System.out.println(s1.isEmpty());
     }
 
 }
