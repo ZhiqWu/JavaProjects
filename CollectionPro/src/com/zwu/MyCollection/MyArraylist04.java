@@ -3,19 +3,26 @@ package com.zwu.MyCollection;
 /*
  * 自定义实现一个ArrayList，体会底层原理
  * 增加数组扩容
+ * 增加set和get方法
+ * 增加数组边界检查
  * */
 
-public class MyArraylist03<E> {
+public class MyArraylist04<E> {
     private Object[] elementData;
     private int size;
 
     private static int DEFAULT_CAPACITY = 10;
 
-    public MyArraylist03() {
+    public MyArraylist04() {
         elementData = new Object[DEFAULT_CAPACITY];
     }
 
-    public MyArraylist03(int capacity) {
+    public MyArraylist04(int capacity) {
+        if (capacity < 0) {
+            throw new RuntimeException("容器容量不能为负数");
+        } else if (capacity == 0) {
+            capacity = DEFAULT_CAPACITY;
+        }
         elementData = new Object[capacity];
     }
 
@@ -30,6 +37,23 @@ public class MyArraylist03<E> {
         elementData[size++] = element;
     }
 
+    public E get(int index) {
+        return (E) elementData[index];
+    }
+
+    public void set(E element, int index) {
+        checkRange(index);
+        elementData[index] = element;
+    }
+
+    public void checkRange(int index) {
+        //索引合法判断[0,size)
+        if (index < 0 || index > size - 1) {
+            //不合法
+            throw new RuntimeException();
+        }
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -42,14 +66,15 @@ public class MyArraylist03<E> {
     }
 
     public static void main(String[] args) {
-        MyArraylist03<String> s1 = new MyArraylist03<>(20);
+        MyArraylist04<String> s1 = new MyArraylist04<>();
         s1.add("aa");
         s1.add("bb");
-        for (int i = 0; i < 40; ++i) {
-            s1.add("zz");
+        for (int i = 0; i < 10; ++i) {
+            s1.add("zz" + i);
         }
-
         System.out.println(s1);
+        s1.set("dddd", 10);
+        System.out.println(s1.get(10));
     }
 
 }

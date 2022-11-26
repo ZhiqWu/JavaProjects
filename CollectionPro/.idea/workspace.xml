@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec1b5ec-9efc-47a5-a6be-0e42329be75a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollectionPro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/TestList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/GenericsPro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/src/com/zwu/test/Test01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/src/com/zwu/test/Test02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GenericsPro/src/com/zwu/test/TestGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AirplaneFlight/PlaneWar1.0/src/game/MyGameFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AirplaneFlight/PlaneWar1.0/src/game/MyGameFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CollectionPro/com/zwu/collection/TestList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CollectionPro/com/zwu/collection/TestList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zwu/collection/TestList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zwu/collection/TestList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zwu.MyCollection" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +59,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668416565115</updated>
-      <workItem from="1668416566272" duration="766000" />
+      <workItem from="1668416566272" duration="1299000" />
+      <workItem from="1668670118693" duration="597000" />
+      <workItem from="1669100037501" duration="1190000" />
+      <workItem from="1669128860461" duration="7389000" />
     </task>
     <servers />
   </component>
@@ -80,5 +82,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist03.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="elementData" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

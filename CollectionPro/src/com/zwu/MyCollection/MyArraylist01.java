@@ -4,17 +4,17 @@ package com.zwu.MyCollection;
  * 自定义实现一个ArrayList，体会底层原理
  * */
 
-public class MyArraylist {
+public class MyArraylist01 {
     private Object[] elementData;
     private int size;
 
     private static int DEFAULT_CAPACITY = 10;
 
-    public MyArraylist() {
+    public MyArraylist01() {
         elementData = new Object[DEFAULT_CAPACITY];
     }
 
-    public MyArraylist(int capacity) {
+    public MyArraylist01(int capacity) {
         elementData = new Object[capacity];
     }
 
@@ -34,7 +34,7 @@ public class MyArraylist {
     }
 
     public static void main(String[] args) {
-        MyArraylist s1 = new MyArraylist(2);
+        MyArraylist01 s1 = new MyArraylist01(2);
         s1.add("aa");
         s1.add("bb");
         System.out.println(s1);
