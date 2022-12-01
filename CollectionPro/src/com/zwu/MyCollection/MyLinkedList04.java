@@ -5,14 +5,16 @@ package com.zwu.MyCollection;
  * 定义一个链表
  * 增加remove
  * 增加插入节点
+ * 增加小的封装和泛型
  * */
-public class MyLinkedList03 {
+public class MyLinkedList04<E> {
     private Node first;
     private Node last;
     private int size;
 
 
     public void remove(int index) {
+        checkRange(index);
         Node temp = getNode(index);
         if (temp != null) {
             Node up = temp.previous;
@@ -37,8 +39,8 @@ public class MyLinkedList03 {
 
     //[]
     //["a","b","c"]
-    public void add(Object obj) {
-        Node node = new Node(obj);
+    public void add(E element) {
+        Node node = new Node(element);
         if (first == null) {
 //            node.previous = null;
 //            node.next=null;
@@ -53,8 +55,9 @@ public class MyLinkedList03 {
         size++;
     }
 
-    public void add(int index, Object obj) {
-        Node newNode = new Node(obj);
+    public void add(int index, E element) {
+        checkRange(index);
+        Node newNode = new Node(element);
         Node temp = getNode(index);
         if (temp != null) {
             Node up = temp.previous;
@@ -69,11 +72,15 @@ public class MyLinkedList03 {
     //[a,b,c,d,e,f] c 2
     public Object get(int index) {
 
+        checkRange(index);
+        Node temp = getNode(index);
+        return temp != null ? temp.element : null;
+    }
+
+    private void checkRange(int index){
         if (index < 0 || index > size - 1) {
             throw new RuntimeException("索引数字不合法：" + index);
         }
-        Node temp = getNode(index);
-        return temp != null ? temp.element : null;
     }
 
     public Node getNode(int index) {
@@ -109,7 +116,7 @@ public class MyLinkedList03 {
     }
 
     public static void main(String[] args) {
-        MyLinkedList03 list = new MyLinkedList03();
+        MyLinkedList04<String> list = new MyLinkedList04<>();
         list.add("a");
         list.add("b");
         list.add("c");

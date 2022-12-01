@@ -1,4 +1,4 @@
-package com.zwu.MyCollection;
+package com.zwu.collection;
 
 import java.util.List;
 import java.util.Vector;

@@ -4,8 +4,9 @@ package com.zwu.MyCollection;
 /*
  * 定义一个链表
  * 增加remove
+ * 增加插入节点
  * */
-public class MyLinkedList02 {
+public class MyLinkedList03 {
     private Node first;
     private Node last;
     private int size;
@@ -52,6 +53,19 @@ public class MyLinkedList02 {
         size++;
     }
 
+    public void add(int index, Object obj) {
+        Node newNode = new Node(obj);
+        Node temp = getNode(index);
+        if (temp != null) {
+            Node up = temp.previous;
+            up.next = newNode;
+            newNode.previous = up;
+            newNode.next = temp;
+            temp.previous = newNode;
+        }
+
+    }
+
     //[a,b,c,d,e,f] c 2
     public Object get(int index) {
 
@@ -95,7 +109,7 @@ public class MyLinkedList02 {
     }
 
     public static void main(String[] args) {
-        MyLinkedList02 list = new MyLinkedList02();
+        MyLinkedList03 list = new MyLinkedList03();
         list.add("a");
         list.add("b");
         list.add("c");
@@ -111,6 +125,8 @@ public class MyLinkedList02 {
         System.out.println(list);
 
         list.remove(3);
+        System.out.println(list);
+        list.add(3, "小刘");
         System.out.println(list);
     }
 
