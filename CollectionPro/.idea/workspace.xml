@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec1b5ec-9efc-47a5-a6be-0e42329be75a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyLinkedList02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyLinkedList03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyLinkedList04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/TestVector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/MyHashMap01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/MyHashMap02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/MyHashMap03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zwu/collection/TestMap02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyLinkedList01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/MyLinkedList01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zwu/MyCollection/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zwu/MyCollection/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +46,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zwu.collection" />
       <recent name="com.zwu.MyCollection" />
     </key>
   </component>
@@ -64,7 +63,7 @@
       <workItem from="1669100037501" duration="1190000" />
       <workItem from="1669128860461" duration="7389000" />
       <workItem from="1669430007988" duration="2099000" />
-      <workItem from="1669615511726" duration="8709000" />
+      <workItem from="1669615511726" duration="15597000" />
     </task>
     <servers />
   </component>
@@ -92,6 +91,11 @@
           <url>file://$PROJECT_DIR$/src/com/zwu/MyCollection/MyArraylist03.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zwu/collection/MyHashMap01.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

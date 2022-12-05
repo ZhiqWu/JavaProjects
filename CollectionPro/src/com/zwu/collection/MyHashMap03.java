@@ -4,18 +4,37 @@ package com.zwu.collection;
  * 自定义HashMap
  * 实现了put方法增加键值对，并解决了键重复的时候覆盖相应的节点。
  * 重写toString方法，方便查看map中的键值对
+ * 实现get方法，根据key值得到value
  * */
 
-public class MyHashMap02 {
+public class MyHashMap03 {
     Node[] table;               //bucket数组
     int size;                   //存放键值对的个数
 
-    public MyHashMap02() {
+    public MyHashMap03() {
         table = new Node[16];   //长度一般定义成2的整数幂
 
     }
 
+    public Object get(Object key) {
+        int hash = myHash(key.hashCode(), table.length);
+        Object value = null;
+        if (table[hash] != null) {
+            Node temp = table[hash];
+            while (temp != null) {
+                if (temp.key.equals(key)) {//如果相等，则说明找到了键值对
+                    value = temp.value;
+                    break;
+                } else {
+                    temp = temp.next;
+                }
+            }
+        }
+        return value;
+    }
+
     public void put(Object key, Object value) {
+        //如果要完善还要考虑数组扩容
         //定义了新的节点对象
         Node newNode = new Node();
         newNode.hash = myHash(key.hashCode(), table.length);
@@ -67,13 +86,13 @@ public class MyHashMap02 {
     }
 
     public static int myHash(int v, int length) {
-        System.out.println("hash in MyHash: " + (v & (length - 1))); //直接位运算，效率高
-        System.out.println("hash in MyHash: " + (v % (length - 1))); //取模运算，效率低
+        //System.out.println("hash in MyHash: " + (v & (length - 1))); //直接位运算，效率高
+        //System.out.println("hash in MyHash: " + (v % (length - 1))); //取模运算，效率低
         return v & (length - 1);
     }
 
     public static void main(String[] args) {
-        MyHashMap02 m = new MyHashMap02();
+        MyHashMap03 m = new MyHashMap03();
         m.put(10, "qq");
         m.put(20, "ww");
         m.put(30, "ee");
@@ -81,6 +100,7 @@ public class MyHashMap02 {
         m.put(53, "老大");
         m.put(69, "老二");
         m.put(83, "老三");
+        System.out.println(m.get(83));
 
         System.out.println(m);
 
