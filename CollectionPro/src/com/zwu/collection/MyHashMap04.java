@@ -6,44 +6,45 @@ package com.zwu.collection;
  * 重写toString方法，方便查看map中的键值对
  * 实现get方法，根据key值得到value
  * 增加size++
+ * 增加泛型
  * */
 
-public class MyHashMap03 {
-    Node[] table;               //bucket数组
+public class MyHashMap04<K, V> {
+    Node2[] table;               //bucket数组
     int size;                   //存放键值对的个数
 
-    public MyHashMap03() {
-        table = new Node[16];   //长度一般定义成2的整数幂
+    public MyHashMap04() {
+        table = new Node2[16];   //长度一般定义成2的整数幂
 
     }
 
-    public Object get(Object key) {
+    public V get(K key) {
         int hash = myHash(key.hashCode(), table.length);
         Object value = null;
         if (table[hash] != null) {
-            Node temp = table[hash];
+            Node2 temp = table[hash];
             while (temp != null) {
                 if (temp.key.equals(key)) {//如果相等，则说明找到了键值对
-                    value = temp.value;
+                    value = (V) temp.value;
                     break;
                 } else {
                     temp = temp.next;
                 }
             }
         }
-        return value;
+        return (V) value;
     }
 
-    public void put(Object key, Object value) {
+    public void put(K key, V value) {
         //如果要完善还要考虑数组扩容
         //定义了新的节点对象
-        Node newNode = new Node();
+        Node2 newNode = new Node2();
         newNode.hash = myHash(key.hashCode(), table.length);
         newNode.key = key;
         newNode.value = value;
 
-        Node temp = table[newNode.hash];
-        Node iterLast = null;           //正在遍历的最后一个元素
+        Node2 temp = table[newNode.hash];
+        Node2 iterLast = null;           //正在遍历的最后一个元素
         Boolean keyRepeat = false;
         if (temp == null) {
             //此处数组元素为空，则直接将新节点放进去
@@ -78,7 +79,7 @@ public class MyHashMap03 {
 
         StringBuilder sb = new StringBuilder("{");
         for (int i = 0; i < table.length; ++i) {//遍历bucket数组
-            Node temp = table[i];
+            Node2 temp = table[i];
             while (temp != null) {//遍历链表
                 sb.append(temp.key + ":" + temp.value + ",");
                 temp = temp.next;
@@ -95,9 +96,9 @@ public class MyHashMap03 {
     }
 
     public static void main(String[] args) {
-        MyHashMap03 m = new MyHashMap03();
+        MyHashMap04<Integer, String> m = new MyHashMap04<>();
         m.put(10, "qq");
-        m.put(20, "ww");
+        m.put(2000, "nihao");
         m.put(30, "ee");
         m.put(30, "ll");
         m.put(53, "老大");

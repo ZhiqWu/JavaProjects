@@ -5,6 +5,7 @@ package com.zwu.collection;
  * 实现了put方法增加键值对，并解决了键重复的时候覆盖相应的节点。
  * 重写toString方法，方便查看map中的键值对
  * 实现get方法，根据key值得到value
+ * 增加size++
  * */
 
 public class MyHashMap03 {
@@ -47,6 +48,7 @@ public class MyHashMap03 {
         if (temp == null) {
             //此处数组元素为空，则直接将新节点放进去
             table[newNode.hash] = newNode;
+            size++;
         } else {
             //此处元素不为空，则遍历链表
             while (temp != null) {
@@ -64,6 +66,7 @@ public class MyHashMap03 {
             }
             if (keyRepeat == false) {//没有发生key重复的情况，则添加到链表最后
                 iterLast.next = newNode;
+                size++;
             }
         }
     }
