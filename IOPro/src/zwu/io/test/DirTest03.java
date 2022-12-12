@@ -1,33 +1,33 @@
 package zwu.io.test;
 /*
- * 列出下一级
- * list() 列出下级名称
- * listFiles() 列出下级File对象
- * listRoot() 列出所有的盘符
+ * 递归 方法自己调用自己
+ * 递归头：何时结束递归
+ * 递归体：重复调用
+ * 打印目录树
  * */
 
 import java.io.File;
 
-public class DirTest02 {
+public class DirTest03 {
     public static void main(String[] args) {
-        File dir = new File("D:/Projects/JavaProjects/IOPro");
-
-        //列出下级名称 list
-        String[] subNames = dir.list();
-        for (String s : subNames) {
-            System.out.println(s);
-        }
-        //列出下级对象 listFiles
-        File[] files = dir.listFiles();
-        for (File f : files) {
-            System.out.println(f.getAbsolutePath());
-        }
-        //列出所有盘符
-        File[] roots = dir.listRoots();
-        for (File f : roots) {
-            System.out.println(f.getAbsolutePath());
-        }
+        File src = new File("D:\\Projects\\JavaProjects\\IOPro");
+        printName(src, 0);
 
 
+    }
+    //打印子孙级目录和文件的名称
+
+    public static void printName(File src, int deep) {
+        for (int i = 0; i < deep; ++i) {//控制层次感
+            System.out.print("-");
+        }
+        System.out.println(src.getName());//打印名称
+        if (null == src || !src.exists()) {//递归头
+            return;
+        } else if (src.isDirectory()) {//递归体
+            for (File s : src.listFiles()) {
+                printName(s, deep + 1);
+            }
+        }
     }
 }

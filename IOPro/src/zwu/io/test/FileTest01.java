@@ -6,7 +6,7 @@ package zwu.io.test;
 
 import java.io.File;
 
-public class ioTest01 {
+public class FileTest01 {
     public static void main(String[] args) {
         // \ /名称分隔符 separator
         String path = "D:\\Projects\\JavaProjects\\IOPro\\imag\\IO.png";
