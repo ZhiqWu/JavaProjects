@@ -1,23 +1,31 @@
 package zwu.io.test;
 
 /*
- * 编码：字符串-->字节
+ * 编码：字节-->字符
  * */
 
 import java.io.UnsupportedEncodingException;
 
-public class ContentEncode {
+public class ContentDecode {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        String msg = "性命生命使命";
+        String msg = "性命生命使命aaa";
         //编码：字节数组
         byte[] data = msg.getBytes();
-        System.out.println(data.length);//utf-8 每个中文汉字占3个字节，共18个字节
 
-        //编码：其他字符集
-        data = msg.getBytes("UTF-16LE");
-        System.out.println(data.length);
 
-        data = msg.getBytes("GBK");
-        System.out.println(data.length);
+        //解码：字符串
+        String msg1 = new String(data, 0, data.length, "UTF-8");
+        System.out.println(msg1);
+
+        //乱码：
+        // 1.字节数不够
+        String msg2 = new String(data, 0, data.length-4, "UTF-8");
+        System.out.println(msg2);
+
+        //乱码：
+        // 2.字符集不统一
+        String msg3 = new String(data, 0, data.length-4, "GBK");
+        System.out.println(msg3);
+
     }
 }

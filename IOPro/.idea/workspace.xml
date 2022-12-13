@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="" />
+    <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/abc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ContentDecode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ContentEncode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,15 +35,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\JavaProjects\IOPro\imag" />
@@ -54,6 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670826710293</updated>
       <workItem from="1670826711526" duration="8985000" />
+      <workItem from="1670907709143" duration="6546000" />
     </task>
     <servers />
   </component>
