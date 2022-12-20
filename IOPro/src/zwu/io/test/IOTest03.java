@@ -1,15 +1,18 @@
 package zwu.io.test;
 /*
- * IO标准步骤 标准化
+ * IO标准步骤 标准化 文件字节输入流
  * 1.创建源
  * 2.选择流
  * 3.操作
  * 4.释放资源
  * */
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
-public class IOTest02 {
+public class IOTest03 {
     public static void main(String[] args) throws IOException {
 
         // * 1.创建源
@@ -18,10 +21,13 @@ public class IOTest02 {
         try {
             // * 2.选择流
             is = new FileInputStream(src);
-            // * 3.操作
-            int temp;
-            while ((temp = is.read()) != -1) {
-                System.out.println((char) temp);
+            // * 3.操作(分段读取)
+            byte[] flush= new byte[30];//缓冲容器,一次读取多少个字节
+            int len = -1;//接收长度
+            while ((len = is.read(flush)) != -1) {
+                //字节数组 -->字符串数组
+                String str = new String(flush,0,len);
+                System.out.println(str);
             }
         } finally {
             // * 4.释放资源

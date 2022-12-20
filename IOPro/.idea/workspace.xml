@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/abc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ContentDecode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ContentEncode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/copy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyFile01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyFile02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/abc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/IOTest02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/IOTest02.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,15 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Project/java/JavaProjects/IOPro",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\JavaProjects\IOPro\imag" />
@@ -62,6 +69,7 @@
       <updated>1670826710293</updated>
       <workItem from="1670826711526" duration="8985000" />
       <workItem from="1670907709143" duration="6546000" />
+      <workItem from="1671521409498" duration="6097000" />
     </task>
     <servers />
   </component>
@@ -81,5 +89,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

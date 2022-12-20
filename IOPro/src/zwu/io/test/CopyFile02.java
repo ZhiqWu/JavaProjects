@@ -1,16 +1,24 @@
 package zwu.io.test;
 /*
  * 使用文件字节输入流和输出流达到文件的拷贝
+ * 思考：如何利用递归实现文件夹的拷贝
+ * 答案：
+ * 根据之前的代码，如果是文件则利用copyFile方法，
+ * 如果是文件夹则创建文件夹
  *
  * */
 
 import java.io.*;
 
-public class CopyFile01 {
+public class CopyFile02 {
     public static void main(String[] args) throws IOException {
+        copyFile("src/zwu/io/test/CopyFile01.java", "copy.txt");
+    }
+
+    public static void copyFile(String srcPath, String destPath) {
         // 1.创建源
-        File src = new File("abc.txt");//源头
-        File dest = new File("dest.txt");//目的地
+        File src = new File(srcPath);//源头
+        File dest = new File(destPath);//目的地
         // 2.选择流
         InputStream is = null;
         OutputStream os = null;
@@ -46,4 +54,5 @@ public class CopyFile01 {
             }
         }
     }
+
 }

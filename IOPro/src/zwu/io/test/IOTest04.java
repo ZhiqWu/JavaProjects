@@ -1,39 +1,40 @@
 package zwu.io.test;
 /*
+ * 文件字节输出流
  * IO标准步骤 标准化
  * 1.创建源
  * 2.选择流
- * 3.操作
+ * 3.操作（写出内容）
  * 4.释放资源
  * */
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
-public class IOTest03 {
+public class IOTest04 {
     public static void main(String[] args) throws IOException {
 
-        // * 1.创建源
-        File src = new File("abc.txt");
-        InputStream is = null;
+        // 1.创建源
+        File dest = new File("dest.txt");
+        // 2.选择流
+        OutputStream os = null;
         try {
-            // * 2.选择流
-            is = new FileInputStream(src);
-            // * 3.操作(分段读取)
-            byte[] flush= new byte[30];//缓冲容器,一次读取多少个字节
-            int len = -1;//接收长度
-            while ((len = is.read(flush)) != -1) {
-                //字节数组 -->字符串数组
-                String str = new String(flush,0,len);
-                System.out.println(str);
-            }
+            os = new FileOutputStream(dest, true);
+            // 3.操作
+            String msg = "IO is so easy,on my way\r\n";
+            byte[] data = msg.getBytes();//字符串-->字符数组（编码）
+            os.write(data, 0, data.length);
+            os.flush();
+
         } finally {
-            // * 4.释放资源
-            if (is != null) {
-                is.close();
+            try {
+                if (os != null) {
+                    os.close();
+                }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         }
+
+
     }
 }
