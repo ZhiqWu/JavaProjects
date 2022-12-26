@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/abcCopy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/p1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/Decorate01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/Decorate02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/FileUtils02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest08.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/IOTest09.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/IOTest06.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/IOTest06.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zwu/io/test/CopyFile01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyFile01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +64,7 @@
       <workItem from="1670826711526" duration="8985000" />
       <workItem from="1670907709143" duration="6546000" />
       <workItem from="1671521409498" duration="6701000" />
-      <workItem from="1672038095021" duration="7414000" />
+      <workItem from="1672038095021" duration="8928000" />
     </task>
     <servers />
   </component>
