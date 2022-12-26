@@ -12,11 +12,10 @@ public class CopyFile01 {
         File src = new File("abc.txt");//源头
         File dest = new File("dest.txt");//目的地
         // 2.选择流
-        InputStream is = null;
-        OutputStream os = null;
-        try {
-            is = new FileInputStream(src);
-            os = new FileOutputStream(dest, true);
+
+        try(InputStream is = new FileInputStream(src);
+            OutputStream os = new FileOutputStream(dest, true)){
+
             // 3.操作（分段读取）
             byte[] flush = new byte[30];
             int len = -1;
@@ -28,22 +27,7 @@ public class CopyFile01 {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } finally {
-            // 4.释放资源，先打开的后关闭
-            try {
-                if (os != null) {
-                    os.close();
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                if (is != null) {
-                    is.close();
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
+
     }
 }

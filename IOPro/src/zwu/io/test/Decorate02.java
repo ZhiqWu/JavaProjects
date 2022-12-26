@@ -1,52 +1,97 @@
 package zwu.io.test;
 /*
- * 实现放大器对声音的方法功能
+ * 模拟咖啡
+ * 1.抽象组件 需要装饰的抽象对象（接口或抽象父类）
+ * 2.具体组件 需要装饰的对象
+ * 3.抽象装饰类 包含了对抽象组件的引用以及装饰者共有的方法
+ * 4.具体装饰类 被装饰的对象
  * */
 
-public class Decorate01 {
+public class Decorate02 {
     public static void main(String[] args) {
-        Person p = new Person();
-        p.say();
+        Drink coffee = new Coffee();
+        Drink sugar = new Sugar(coffee); //装饰
+        System.out.println(sugar.info() + "-->" + sugar.cost());
+        Drink milk = new Milk(coffee);  //装饰
+        System.out.println(milk.info() + "-->" + milk.cost());
 
-        Amplifier am = new Amplifier(p);
-        am.say();
-
+        milk = new Milk(sugar);         //装饰
+        System.out.println(milk.info() + "-->" + milk.cost());
     }
+
 }
 
-interface Say {
-    void say();
+//抽象组件
+interface Drink {
+    double cost();//费用
+
+    String info();//说明
 }
 
-class Person implements Say {
-    //属性
-    private int voice = 7;
+//具体组件
+class Coffee implements Drink {
+    private String name = "拿铁";
 
     @Override
-    public void say() {
-        System.out.println("人的声音为 " + this.getVoice());
-    }
-
-    public int getVoice() {
-        return voice;
-    }
-
-    public void setVoice(int voice) {
-        this.voice = voice;
-    }
-}
-
-//放大器
-class Amplifier implements Say {
-    private Person p;
-
-    Amplifier(Person p) {
-        this.p = p;
+    public double cost() {
+        return 10;
     }
 
     @Override
-    public void say() {
-        System.out.println("人的声音为 " + p.getVoice() * 10);
-        System.out.println("噪音");
+    public String info() {
+        return name;
+    }
+}
+
+//抽象装饰类
+class Decorate implements Drink {
+    //对抽象组件的引用
+    private Drink drink;
+
+    public Decorate(Drink drink) {
+        this.drink = drink;
+    }
+
+    @Override
+    public double cost() {
+        return this.drink.cost();
+    }
+
+    @Override
+    public String info() {
+        return this.drink.info();
+    }
+}
+
+//具体装饰类
+class Milk extends Decorate {
+    public Milk(Drink drink) {
+        super(drink);
+    }
+
+    @Override
+    public double cost() {
+        return super.cost() * 4;
+    }
+
+    @Override
+    public String info() {
+        return super.info() + "加入了牛奶！";
+    }
+}
+
+class Sugar extends Decorate {
+    public Sugar(Drink drink) {
+        super(drink);
+    }
+
+    @Override
+    public double cost() {
+        return super.cost() * 2;
+    }
+
+    @Override
+    public String info() {
+        return super.info() + "加入了糖！";
     }
 }
