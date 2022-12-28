@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/IO.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOCopy.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baidu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ConvertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ConvertTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/DataTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ObjectTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ObjectTest02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/copy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/copy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zwu/io/test/CopyFile02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyFile02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "create.test.in.the.same.root": "true",
     "last_opened_file_path": "C:/Project/java/JavaProjects/IOPro/src/zwu/io/test",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
@@ -65,6 +85,8 @@
       <workItem from="1670907709143" duration="6546000" />
       <workItem from="1671521409498" duration="6701000" />
       <workItem from="1672038095021" duration="8928000" />
+      <workItem from="1672126469688" duration="6027000" />
+      <workItem from="1672218804566" duration="4808000" />
     </task>
     <servers />
   </component>

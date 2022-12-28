@@ -6,23 +6,48 @@ package zwu.io.test;
  * */
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URL;
 
-public class ConvertTest {
+public class ConvertTest02 {
+
     public static void main(String[] args) {
-        //System.in System.out
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
-            //循环获取键盘的输入（exit），输出此内容
-            String msg = "";
-            while (!msg.equals("exit")) {
-                msg = reader.readLine();
-                writer.write(msg);
-                writer.newLine();
-                writer.flush();         //强制刷新
+        try (BufferedReader reader =
+                     new BufferedReader(new InputStreamReader(
+                             new URL("http://www.baidu.com").openStream(), "utf-8"));
+             BufferedWriter writer =
+                     new BufferedWriter(new OutputStreamWriter(
+                             new FileOutputStream("baidu.html"),"UTF-8"))
+        ) {
+            {
+                String line = null;
+                while ((line = reader.readLine()) != null) {
+                    //System.out.println(line);
+                    writer.write(line); //字符集不统一出现乱码
+                    writer.newLine();
+                }
+                writer.flush();
             }
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
         } catch (IOException e) {
-            System.out.println("操作异常！");
-            ;
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void test1(String[] args) {
+        try (InputStreamReader is =
+                     new InputStreamReader(new URL("http://www.baidu.com").openStream(), "utf-8")) {
+            {
+                int temp;
+                while ((temp = is.read()) != -1) {
+                    System.out.print((char) temp);
+                }
+            }
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }

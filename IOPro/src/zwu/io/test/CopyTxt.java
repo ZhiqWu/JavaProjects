@@ -1,6 +1,6 @@
 package zwu.io.test;
 /*
- * 使用文件字节输入流和输出流达到文件的拷贝
+ * 使用文件字节输入流和输出流达到纯文本的拷贝 加入缓冲流
  * 思考：如何利用递归实现文件夹的拷贝
  * 答案：
  * 根据之前的代码，如果是文件则利用copyFile方法，
@@ -10,51 +10,30 @@ package zwu.io.test;
 
 import java.io.*;
 
-public class CopyFile02 {
+public class CopyTxt {
     public static void main(String[] args) throws IOException {
-        long t1 = System.currentTimeMillis();
-        copyFile("IO.mp4", "IOCopy.mp4");
-        long t2 = System.currentTimeMillis();
-        System.out.println(t2 - t1);
+        copyTxt("abc.txt", "abe.txt");
     }
 
-    public static void copyFile(String srcPath, String destPath) {
+    public static void copyTxt(String srcPath, String destPath) {
         // 1.创建源
         File src = new File(srcPath);//源头
         File dest = new File(destPath);//目的地
         // 2.选择流
-        InputStream is = null;
-        OutputStream os = null;
-        try {
-            is = new BufferedInputStream(new FileInputStream(src));
-            os = new BufferedOutputStream(new FileOutputStream(dest));
-            // 3.操作（分段读取）
-            byte[] flush = new byte[1024];
-            int len = -1;
-            while ((len = is.read(flush)) != -1) {
-                os.write(flush, 0, len);
-                os.flush();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(src));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(dest))) {
+
+            // 3.操作（分行读取）
+            String line = null;
+
+            while ((line = br.readLine()) != null) {
+                bw.write(line);
+                bw.newLine();
             }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            bw.flush();
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } finally {
-            // 4.释放资源，先打开的后关闭
-            try {
-                if (os != null) {
-                    os.close();
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            try {
-                if (is != null) {
-                    is.close();
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
     }
 

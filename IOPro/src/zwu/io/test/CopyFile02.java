@@ -12,7 +12,10 @@ import java.io.*;
 
 public class CopyFile02 {
     public static void main(String[] args) throws IOException {
-        copyFile("src/zwu/io/test/CopyFile01.java", "copy.txt");
+        long t1 = System.currentTimeMillis();
+        copyFile("IO.mp4", "IOCopy.mp4");
+        long t2 = System.currentTimeMillis();
+        System.out.println(t2 - t1);
     }
 
     public static void copyFile(String srcPath, String destPath) {
@@ -23,10 +26,10 @@ public class CopyFile02 {
         InputStream is = null;
         OutputStream os = null;
         try {
-            is = new FileInputStream(src);
-            os = new FileOutputStream(dest, true);
+            is = new BufferedInputStream(new FileInputStream(src));
+            os = new BufferedOutputStream(new FileOutputStream(dest));
             // 3.操作（分段读取）
-            byte[] flush = new byte[30];
+            byte[] flush = new byte[1024];
             int len = -1;
             while ((len = is.read(flush)) != -1) {
                 os.write(flush, 0, len);

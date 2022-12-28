@@ -12,11 +12,12 @@ package zwu.io.test;
 import java.io.*;
 import java.util.Date;
 
-public class ObjectTest01 {
+public class ObjectTest02 {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         //写出-->序列化
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ObjectOutputStream oos = new ObjectOutputStream(new BufferedOutputStream(baos));
+
+        ObjectOutputStream oos = new ObjectOutputStream(
+                new BufferedOutputStream(new FileOutputStream("obj.txt")));
 
         //操作数据类型 + 数据
         oos.writeUTF("编码辛酸泪");
@@ -26,15 +27,15 @@ public class ObjectTest01 {
         //对象
         oos.writeObject("谁解其中味");
         oos.writeObject(new Date());
-        Employee emp = new Employee("马云", 400);
+        Employe emp = new Employe("马云", 400);
         oos.writeObject(emp);
 
         oos.flush();
-        byte[] data = baos.toByteArray();
-        System.out.println(data.length);
+        oos.close();
+
 
         //读取-->反序列化
-        ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new ByteArrayInputStream(data)));
+        ObjectInputStream ois = new ObjectInputStream(new BufferedInputStream(new FileInputStream("obj.txt")));
         String msg = ois.readUTF();
         int age = ois.readInt();
         boolean flag = ois.readBoolean();
@@ -53,24 +54,24 @@ public class ObjectTest01 {
             Date dateObj = (Date) date;
             System.out.println(dateObj);
         }
-        if (employee instanceof Employee) {
-            Employee empObj = (Employee) employee;
+        if (employee instanceof Employe) {
+            Employe empObj = (Employe) employee;
             System.out.println(empObj);
         }
     }
 }
 
 //javabean 封装数据用
-class Employee implements java.io.Serializable {
+class Employe implements Serializable {
     private transient String name; //该数据不需要序列化
     private double salary;
 
-    public Employee(String name, double salary) {
+    public Employe(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
 
-    public Employee() {
+    public Employe() {
     }
 
     @Override

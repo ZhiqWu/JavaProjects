@@ -1,6 +1,6 @@
 package zwu.io.test;
 /*
- * 文件字节输出流
+ * 文件字节输出流 加入缓冲流
  * IO标准步骤 标准化
  * 1.创建源
  * 2.选择流
@@ -10,7 +10,7 @@ package zwu.io.test;
 
 import java.io.*;
 
-public class IOTest04 {
+public class BufferedTest02 {
     public static void main(String[] args) throws IOException {
 
         // 1.创建源
@@ -18,7 +18,7 @@ public class IOTest04 {
         // 2.选择流
         OutputStream os = null;
         try {
-            os = new FileOutputStream(dest, true);
+            os = new BufferedOutputStream(new FileOutputStream(dest));
             // 3.操作
             String msg = "IO is so easy,on my way\r\n";
             byte[] data = msg.getBytes();//字符串-->字符数组（编码）

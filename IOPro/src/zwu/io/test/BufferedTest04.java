@@ -1,6 +1,6 @@
 package zwu.io.test;
 /*
- * 文件字符输出流
+ * 文件字符输出流 加入缓冲流
  * IO标准步骤 标准化
  * 1.创建源
  * 2.选择流
@@ -10,14 +10,14 @@ package zwu.io.test;
 
 import java.io.*;
 
-public class IOTest06 {
+public class BufferedTest04 {
     public static void main(String[] args) {
         // 1.创建流
         File dest = new File("dest.txt");
         // 2.选择流
-        Writer writer = null;
+        BufferedWriter writer = null;
         try {
-            writer = new FileWriter(dest, true);
+            writer = new BufferedWriter(new FileWriter(dest));
             // 3.操作
             String msg = "要好好学习，天天向上！\r\n";
 
@@ -29,8 +29,9 @@ public class IOTest06 {
             //writer.write(data, 0, data.length);
 
             //写法三
-            writer.append("hello world! \r\n").append("hi\r\n");
-
+            writer.append("hello world!");
+            writer.newLine();
+            writer.append("hi");
             writer.flush();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
