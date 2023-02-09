@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
+<<<<<<< HEAD
+=======
+      <change afterPath="$PROJECT_DIR$/IO.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOCopy.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/baidu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/BufferedTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ConvertTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ConvertTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyTxt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/DataTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ObjectTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/io/test/ObjectTest02.java" afterDir="false" />
+>>>>>>> 8375611180ecc548c8c55643ebd1f79ef89603ad
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/copy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/copy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IOPro/zwu/io/test/CopyFile02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/zwu/io/test/CopyFile02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zwu/io/test/CopyFile02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "create.test.in.the.same.root": "true",
+    "last_opened_file_path": "C:/Project/java/JavaProjects/IOPro/src/zwu/io/test",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Project\java\JavaProjects\IOPro\src\zwu\io\test" />
+      <recent name="C:\Project\java\JavaProjects\IOPro" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\JavaProjects\IOPro\imag" />
     </key>
@@ -56,8 +85,16 @@
       <option name="presentableId" value="Default" />
       <updated>1670826710293</updated>
       <workItem from="1670826711526" duration="8985000" />
+<<<<<<< HEAD
       <workItem from="1670907709143" duration="6668000" />
       <workItem from="1675764517101" duration="44000" />
+=======
+      <workItem from="1670907709143" duration="6546000" />
+      <workItem from="1671521409498" duration="6701000" />
+      <workItem from="1672038095021" duration="8928000" />
+      <workItem from="1672126469688" duration="6027000" />
+      <workItem from="1672218804566" duration="4808000" />
+>>>>>>> 8375611180ecc548c8c55643ebd1f79ef89603ad
     </task>
     <servers />
   </component>
@@ -77,5 +114,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
