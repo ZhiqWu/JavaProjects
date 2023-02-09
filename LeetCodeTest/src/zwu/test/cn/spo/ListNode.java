@@ -1,2 +1,10 @@
-package zwu.test.cn.spo;public class ListNode {
+package zwu.test.cn.spo;
+
+public class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+    }
 }

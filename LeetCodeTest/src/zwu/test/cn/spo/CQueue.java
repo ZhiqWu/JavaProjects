@@ -1,30 +1,30 @@
-package zwu.test.cn;
+package zwu.test.cn.spo;
 
 import java.util.Stack;
 
 public class CQueue {
-     Stack<Integer> st1 = new Stack<Integer>();
-    Stack<Integer> st2 = new Stack<Integer>();
+    private Stack<Integer> stIn;
+    private Stack<Integer> stOut;
 
     public CQueue() {
-
+        stIn = new Stack<>();
+        stOut = new Stack<>();
     }
 
     public void appendTail(int value) {
-        st1.push(value);
+        stIn.push(value);
     }
 
     public int deleteHead() {
-        if (st1.empty()!=true && st2.empty()) {
-            while(st1.empty()!=true){
-                int temp=st1.pop();
-                st2.push(temp);
-            }
-        }
-        if(st2.empty()!=true){
-            return st2.pop();
-        }else{
+        if (stIn.empty() && stOut.empty()) {
             return -1;
         }
+
+        if (stOut.empty()) {
+            while (!stIn.empty()) {
+                stOut.push(stIn.pop());
+            }
+        }
+        return stOut.pop();
     }
 }
