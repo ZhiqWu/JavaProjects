@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ddc77319-25ff-4dfc-a6db-e1364137872f" name="Changes" comment="">
+<<<<<<< HEAD
+=======
       <change afterPath="$PROJECT_DIR$/print.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/zwu/io/test/PrintTest01.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/zwu/io/test/PrintTest02.java" afterDir="false" />
+>>>>>>> 8375611180ecc548c8c55643ebd1f79ef89603ad
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,12 +69,15 @@
       <option name="presentableId" value="Default" />
       <updated>1670826710293</updated>
       <workItem from="1670826711526" duration="8985000" />
+<<<<<<< HEAD
+      <workItem from="1670907709143" duration="6668000" />
+      <workItem from="1675764517101" duration="44000" />
+=======
       <workItem from="1670907709143" duration="6546000" />
       <workItem from="1671521409498" duration="6701000" />
       <workItem from="1672038095021" duration="8928000" />
       <workItem from="1672126469688" duration="6027000" />
       <workItem from="1672218804566" duration="4808000" />
-      <workItem from="1672320047117" duration="1726000" />
     </task>
     <servers />
   </component>
