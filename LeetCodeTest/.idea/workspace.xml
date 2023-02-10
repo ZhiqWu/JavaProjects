@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1651b2e-ede2-4ee5-8196-92f3e75a2b97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/StringReplaceSpace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/StringReverseLeftWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCodeTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/CQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/CopyRandomList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/MinStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/ReverseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/ReversePrintList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IOPro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IOPro/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +48,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Project/java/JavaProjects/LeetCodeTest"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -49,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675764561507</updated>
-      <workItem from="1675764562741" duration="20827000" />
+      <workItem from="1675764562741" duration="17842000" />
     </task>
     <servers />
   </component>
