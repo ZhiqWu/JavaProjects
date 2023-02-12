@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1651b2e-ede2-4ee5-8196-92f3e75a2b97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/ArrFindNumberIn2DArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/CharFirstUniqChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/MinArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e1651b2e-ede2-4ee5-8196-92f3e75a2b97" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675764561507</updated>
       <workItem from="1675764562741" duration="17842000" />
-      <workItem from="1676100415193" duration="3350000" />
+      <workItem from="1676100415193" duration="3947000" />
     </task>
     <servers />
   </component>
