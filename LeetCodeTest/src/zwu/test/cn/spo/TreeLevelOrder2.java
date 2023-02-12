@@ -1,36 +1,32 @@
 package zwu.test.cn.spo;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
-public class TreeLevelOrder {
-    public int[] levelOrder(TreeNode root) {
+public class TreeLevelOrder2 {
+    public List<List<Integer>> levelOrder(TreeNode root) {
         TreeNode node = root;
         Queue<TreeNode> queue = new LinkedList<>();
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        queue.offer(node);
+        List<List<Integer>> result = new LinkedList<>();
+
+        if (node != null) {
+            queue.offer(node);
+        }
         while (!queue.isEmpty()) {
-            TreeNode temp = queue.poll();
-            if(temp!=null) {
-                result.add(temp.val);
-                if(temp.left!=null){
-                    queue.offer(temp.left);
+            List<Integer> temp = new ArrayList<>();
+            for (int i = queue.size(); i > 0; --i) {
+                TreeNode tempNode = queue.poll();
+                temp.add(tempNode.val);
+                if (tempNode.left != null) {
+                    queue.add(tempNode.left);
                 }
-                if(temp.right!=null){
-                    queue.offer(temp.right);
+                if (tempNode.right != null) {
+                    queue.add(tempNode.right);
                 }
-
             }
-        }
-        int[] list=new int[result.size()];
-        for(int i=0;i<result.size();++i){
-            list[i]=result.get(i);
+            result.add(temp);
         }
 
-        return list;
-
-
+        return result;
     }
 
 }

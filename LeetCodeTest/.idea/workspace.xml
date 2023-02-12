@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1651b2e-ede2-4ee5-8196-92f3e75a2b97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/TreeLevelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/TreeLevelOrder2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/TreeLevelOrder3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/zwu/test/cn/spo/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +44,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Project/java/JavaProjects/LeetCodeTest&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="zwu.test.cn.spo" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
